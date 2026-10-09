@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Motion Graphics</title>
+  <link rel="stylesheet" href="src/styles.css">
+</head>
+<body>
+  <main class="stage-wrap">
+    <canvas id="stage" width="1920" height="1080" aria-label="Motion graphics stage"></canvas>
+  </main>
+
+  <nav class="controls" aria-label="Playback controls">
+    <button id="prev" title="Previous scene (←)">⏮</button>
+    <button id="play" title="Play / pause (space)">⏸</button>
+    <button id="next" title="Next scene (→)">⏭</button>
+    <select id="scene" aria-label="Scene"></select>
+    <input id="scrub" type="range" min="0" max="1000" value="0" aria-label="Scene progress">
+    <label><input id="loop" type="checkbox"> Loop scene</label>
+  </nav>
+
+  <script type="module" src="src/main.js"></script>
+</body>
+</html>

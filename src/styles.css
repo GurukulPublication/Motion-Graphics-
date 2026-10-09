@@ -1,0 +1,20 @@
+:root {
+  --bg: #0b0d12;
+  --panel: #161a23;
+  --fg: #e8ecf3;
+  --accent: #ff7a3d;
+}
+* { box-sizing: border-box; }
+html, body { margin: 0; height: 100%; background: var(--bg); color: var(--fg);
+  font-family: system-ui, -apple-system, "Segoe UI", sans-serif; }
+body { display: flex; flex-direction: column; }
+.stage-wrap { flex: 1; display: grid; place-items: center; padding: 16px; min-height: 0; }
+#stage { width: 100%; max-height: 100%; aspect-ratio: 16 / 9; object-fit: contain;
+  background: #000; border-radius: 8px; box-shadow: 0 10px 40px #0008; }
+.controls { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; justify-content: center;
+  padding: 12px 16px; background: var(--panel); }
+.controls button, .controls select { background: #222837; color: var(--fg); border: 1px solid #2e3548;
+  border-radius: 6px; padding: 6px 10px; font: inherit; cursor: pointer; }
+.controls button:hover { border-color: var(--accent); }
+#scrub { flex: 1; min-width: 160px; accent-color: var(--accent); }
+label { display: flex; gap: 4px; align-items: center; font-size: 14px; }
